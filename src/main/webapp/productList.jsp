@@ -17,6 +17,7 @@ pageEncoding="UTF-8" isELIgnored="false"%>
             <th>price</th>
             <th>manufacturer</th>
             <th>manufacturing date</th>
+            <th>상세보기</th>
             <th>수정</th>
             <th>삭제</th>
         </tr>
@@ -27,6 +28,7 @@ pageEncoding="UTF-8" isELIgnored="false"%>
                 <td>${product.price}</td>
                 <td>${product.manufacturer}</td>
                 <td>${product.manufacturingDate}</td>
+                <td><a href="/products?action=info&id=${product.id}">상세</a></td>
                 <td><a href="/products?action=update&id=${product.id}">수정</a></td>
                 <td><a href="/products?action=delete&id=${product.id}">삭제</a></td>
             </tr>

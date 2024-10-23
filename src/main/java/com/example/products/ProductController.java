@@ -76,7 +76,7 @@ public class ProductController extends HttpServlet {
   private String deleteProductById(HttpServletRequest req, HttpServletResponse resp) {
     int id = Integer.parseInt(req.getParameter("id"));
     service.deleteProductById(id);
-    return "productList.jsp";
+    return "/products?action=list";
   }
 
   private String updateProduct(HttpServletRequest req, HttpServletResponse resp) {
